@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- Top Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/topNavBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_large"
+        android:gravity="start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnThemeToggle"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="@dimen/margin_small"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:backgroundTint="?attr/colorSurfaceVariant"
+            app:cornerRadius="28dp"
+            app:icon="@drawable/ic_light_mode"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="?attr/colorOnSurfaceVariant"
+            android:contentDescription="@string/dark_mode" />
+
+    </LinearLayout>
+
+    <!-- Main Content Container -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/topNavBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="500dp"
+            android:paddingStart="@dimen/margin_xlarge"
+            android:paddingEnd="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_xlarge">
+
+            <!-- Welcome Content Container -->
+            <LinearLayout
+                android:id="@+id/welcomeContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/login_form_background"
+                android:paddingStart="@dimen/margin_xlarge"
+                android:paddingEnd="@dimen/margin_xlarge"
+                android:paddingTop="@dimen/margin_xxlarge"
+                android:paddingBottom="@dimen/margin_xxlarge"
+                android:elevation="@dimen/elevation_medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_max="@dimen/form_max_width"
+                app:layout_constraintVertical_bias="0.4">
+
+                <!-- App Logo/Icon -->
+                <ImageView
+                    android:id="@+id/imgAppIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_edu_connect_logo"
+                    android:layout_marginBottom="@dimen/margin_xlarge"
+                    android:contentDescription="@string/app_name"
+                    app:tint="@color/primary_blue" />
+
+                <!-- Welcome Title -->
+                <TextView
+                    android:id="@+id/tvWelcomeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_title"
+                    android:textSize="@dimen/text_size_headline"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2" />
+
+                <!-- Welcome Subtitle -->
+                <TextView
+                    android:id="@+id/tvWelcomeSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_subtitle"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginBottom="@dimen/margin_xxlarge"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.3" />
+
+                <!-- Login Options -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- Student Login Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMainStudentLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/button_min_height"
+                        android:maxWidth="320dp"
+                        android:text="@string/student_login"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold"
+                        android:textColor="@color/button_text_white"
+                        android:backgroundTint="@color/primary_blue"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        app:icon="@drawable/ic_student"
+                        app:iconGravity="start"
+                        app:iconSize="24dp"
+                        app:iconTint="@color/button_text_white"
+                        app:cornerRadius="@dimen/radius_medium"
+                        android:stateListAnimator="@null"
+                        android:elevation="@dimen/elevation_small" />
+
+                    <!-- Teacher Login Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMainTeacherLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/button_min_height"
+                        android:maxWidth="320dp"
+                        android:text="@string/teacher_login"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:backgroundTint="@android:color/transparent"
+                        app:strokeColor="@color/primary_blue"
+                        app:strokeWidth="2dp"
+                        app:icon="@drawable/ic_teacher"
+                        app:iconGravity="start"
+                        app:iconSize="24dp"
+                        app:iconTint="@color/primary_blue"
+                        app:cornerRadius="@dimen/radius_medium"
+                        android:stateListAnimator="@null"
+                        style="@style/Widget.Material3.Button.OutlinedButton" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

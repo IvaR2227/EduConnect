@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24dp</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80dp</dimen>
+    <dimen name="abc_action_bar_default_height_material">64dp</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8dp</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8dp</dimen>
+    <dimen name="abc_config_prefDialogWidth">580dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="button_min_height">64dp</dimen>
+    <dimen name="design_navigation_max_width">320dp</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0dp</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2dp</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24dp</dimen>
+    <dimen name="design_snackbar_max_width">576dp</dimen>
+    <dimen name="design_snackbar_min_width">320dp</dimen>
+    <dimen name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical
+  </dimen>
+    <dimen name="design_tab_scrollable_min_width">160dp</dimen>
+    <dimen name="elevation_large">12dp</dimen>
+    <dimen name="elevation_medium">6dp</dimen>
+    <dimen name="elevation_small">4dp</dimen>
+    <dimen name="form_max_width">500dp</dimen>
+    <dimen name="input_min_height">64dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_tiny">6dp</dimen>
+    <dimen name="margin_xlarge">48dp</dimen>
+    <dimen name="margin_xxlarge">64dp</dimen>
+    <dimen name="mtrl_bottomappbar_height">64dp</dimen>
+    <dimen name="mtrl_toolbar_default_height">64dp</dimen>
+    <dimen name="radius_large">20dp</dimen>
+    <dimen name="radius_medium">16dp</dimen>
+    <dimen name="radius_small">10dp</dimen>
+    <dimen name="radius_xlarge">24dp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_display">36sp</dimen>
+    <dimen name="text_size_headline">32sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_title">28sp</dimen>
+    <dimen name="title_max_width">480dp</dimen>
+    <dimen name="touch_target_min">48dp</dimen>
+    <integer name="design_snackbar_text_max_lines">1</integer>
+    <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
+    <item name="tabGravity">center</item>
+    <item name="tabMode">fixed</item>
+  </style>
+</resources>

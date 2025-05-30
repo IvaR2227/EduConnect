@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="background_dark">#1A1A1A</color>
+    <color name="background_light">#F5F7FA</color>
+    <color name="black">#000000</color>
+    <color name="button_primary">#0DBA80</color>
+    <color name="button_primary_pressed">#7AA67A</color>
+    <color name="button_text_white">#FFFFFF</color>
+    <color name="divider_color">#E0E0E0</color>
+    <color name="error">#E74C3C</color>
+    <color name="info_blue">#2196F3</color>
+    <color name="input_background_dark">#404040</color>
+    <color name="input_background_light">#F8F9FA</color>
+    <color name="input_border_dark">#555555</color>
+    <color name="input_border_light">#E9ECEF</color>
+    <color name="link_blue">#0B5394</color>
+    <color name="primary_blue">#189CFF</color>
+    <color name="primary_blue_dark">#4A8BC2</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="secondary_green">#8FBC8F</color>
+    <color name="secondary_green_dark">#7AA67A</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="surface_dark">#2D2D2D</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_primary_light">#2C3E50</color>
+    <color name="text_secondary">#4A4A4A</color>
+    <color name="text_secondary_dark">#BDC3C7</color>
+    <color name="text_secondary_light">#7F8C8D</color>
+    <color name="transparent">#00000000</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="button_min_height">56dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="form_max_width">450dp</dimen>
+    <dimen name="input_min_height">56dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xxlarge">48dp</dimen>
+    <dimen name="radius_large">16dp</dimen>
+    <dimen name="radius_medium">12dp</dimen>
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_xlarge">20dp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_display">32sp</dimen>
+    <dimen name="text_size_headline">28sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="title_max_width">400dp</dimen>
+    <dimen name="touch_target_min">48dp</dimen>
+    <string name="app_logo_description">EduConnect application logo</string>
+    <string name="app_name">EduConnect</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="create_account">Create Account</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="email_mobile_hint">e.g., user@example.com or 1234567890</string>
+    <string name="email_or_mobile">Email or Mobile Number</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="gcm_defaultSenderId" translatable="false">779758536991</string>
+    <string name="go_to_dashboard">Go to Dashboard</string>
+    <string name="google_api_key" translatable="false">AIzaSyAUUqG_wRzvPht7Qn4myFDmTJnxosqrres</string>
+    <string name="google_app_id" translatable="false">1:779758536991:android:27ea4a78bdcf908ef4882a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAUUqG_wRzvPht7Qn4myFDmTJnxosqrres</string>
+    <string name="google_storage_bucket" translatable="false">educonnect-7fdf8.firebasestorage.app</string>
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="loading">Loading...</string>
+    <string name="loading_progress">Loading, please wait</string>
+    <string name="login">Login</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="logout">Logout</string>
+    <string name="network_error">Network error. Please check your connection.</string>
+    <string name="next">Next</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="project_id" translatable="false">educonnect-7fdf8</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="student_login">Student Login</string>
+    <string name="student_login_subtitle">Access your learning portal.</string>
+    <string name="student_login_title">Student Login</string>
+    <string name="teacher_login">Teacher Login</string>
+    <string name="teacher_login_subtitle">Access your teaching dashboard.</string>
+    <string name="teacher_login_title">Teacher Login</string>
+    <string name="unique_id">Unique ID</string>
+    <string name="unique_id_hint">Enter your unique ID</string>
+    <string name="user_info_placeholder">Welcome to your learning portal</string>
+    <string name="view_profile">View Profile</string>
+    <string name="welcome_message_student">Dear Student,\nYou logged in successfully!</string>
+    <string name="welcome_message_teacher">Dear Teacher,\nYou logged in successfully!</string>
+    <string name="welcome_subtitle">Your gateway to seamless learning and teaching</string>
+    <string name="welcome_title">Welcome to EduConnect</string>
+    <style name="Base.Theme.EduConnect" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_blue_dark</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        
+        <item name="colorSecondary">@color/secondary_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/secondary_green_dark</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+        
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/input_background_light</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        
+        <item name="android:statusBarColor">@color/background_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/background_light</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="o_mr1">true</item>
+    </style>
+    <style name="InputField" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/input_background_light</item>
+        <item name="boxStrokeColor">@color/input_border_light</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_medium</item>
+    </style>
+    <style name="InputField.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/input_background_light</item>
+        <item name="boxStrokeColor">@color/input_border_light</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_medium</item>
+    </style>
+    <style name="LoginButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="android:textColor">@color/button_text_white</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/radius_medium</item>
+        <item name="android:layout_height">@dimen/button_min_height</item>
+        <item name="android:elevation">@dimen/elevation_small</item>
+    </style>
+    <style name="LoginCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/radius_xlarge</item>
+        <item name="cardElevation">@dimen/elevation_large</item>
+        <item name="cardBackgroundColor">@color/surface_light</item>
+        <item name="android:layout_margin">@dimen/margin_large</item>
+    </style>
+    <style name="Theme.EduConnect" parent="Base.Theme.EduConnect"/>
+</resources>

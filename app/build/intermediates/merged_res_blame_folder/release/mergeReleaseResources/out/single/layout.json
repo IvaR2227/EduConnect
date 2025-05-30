@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.example.educonnect.app-mergeReleaseResources-65:/layout/activity_student_login.xml",
+        "source": "com.example.educonnect.app-main-67:/layout/activity_student_login.xml"
+    },
+    {
+        "merged": "com.example.educonnect.app-mergeReleaseResources-65:/layout/activity_teacher_login.xml",
+        "source": "com.example.educonnect.app-main-67:/layout/activity_teacher_login.xml"
+    },
+    {
+        "merged": "com.example.educonnect.app-mergeReleaseResources-65:/layout/fragment_signup_step2.xml",
+        "source": "com.example.educonnect.app-main-67:/layout/fragment_signup_step2.xml"
+    },
+    {
+        "merged": "com.example.educonnect.app-mergeReleaseResources-65:/layout/activity_student_signup.xml",
+        "source": "com.example.educonnect.app-main-67:/layout/activity_student_signup.xml"
+    },
+    {
+        "merged": "com.example.educonnect.app-mergeReleaseResources-65:/layout/fragment_signup_step1.xml",
+        "source": "com.example.educonnect.app-main-67:/layout/fragment_signup_step1.xml"
+    },
+    {
+        "merged": "com.example.educonnect.app-mergeReleaseResources-65:/layout/activity_home.xml",
+        "source": "com.example.educonnect.app-main-67:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.educonnect.app-mergeReleaseResources-65:/layout/activity_main.xml",
+        "source": "com.example.educonnect.app-main-67:/layout/activity_main.xml"
+    }
+]

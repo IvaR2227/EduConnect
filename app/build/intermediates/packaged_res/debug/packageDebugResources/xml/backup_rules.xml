@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include all app data by default -->
+    <include domain="file" path="."/>
+    <include domain="database" path="."/>
+    <include domain="sharedpref" path="."/>
+    <include domain="external" path="."/>
+    
+    <!-- Exclude sensitive files -->
+    <exclude domain="sharedpref" path="auth_tokens.xml"/>
+    <exclude domain="database" path="sensitive.db"/>
+    <exclude domain="file" path="temp/"/>
+</full-backup-content> 

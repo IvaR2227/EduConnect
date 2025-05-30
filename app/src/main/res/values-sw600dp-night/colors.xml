@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tablet Dark Theme Color Overrides -->
+    
+    <!-- Enhanced contrast for tablet dark theme -->
+    <color name="text_primary">@color/white</color>
+    <color name="text_secondary">#CCCCCC</color>
+    
+    <!-- Better visibility on larger screens -->
+    <color name="link_blue">#6BB6FF</color>
+</resources> 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">779758536991</string>
+    <string name="google_api_key" translatable="false">AIzaSyAUUqG_wRzvPht7Qn4myFDmTJnxosqrres</string>
+    <string name="google_app_id" translatable="false">1:779758536991:android:27ea4a78bdcf908ef4882a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAUUqG_wRzvPht7Qn4myFDmTJnxosqrres</string>
+    <string name="google_storage_bucket" translatable="false">educonnect-7fdf8.firebasestorage.app</string>
+    <string name="project_id" translatable="false">educonnect-7fdf8</string>
+</resources>

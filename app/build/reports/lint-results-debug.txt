@@ -1,0 +1,379 @@
+C:\Users\soham\Coding\Project\gradle\wrapper\gradle-wrapper.properties:3: Warning: A newer version of Gradle than 8.12 is available: 8.14.1 [AndroidGradlePluginVersion]
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.12-bin.zip
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AndroidGradlePluginVersion":
+   This detector looks for usage of the Android Gradle Plugin where the
+   version you are using is not the current stable release. Using older
+   versions is fine, and there are cases where you deliberately want to stick
+   with an older version. However, you may simply not be aware that a more
+   recent version is available, and that is what this lint check helps find.
+
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:164: Warning: Use app:drawableStartCompat instead of android:drawableStart [UseCompatTextViewDrawableXml from androidx.appcompat]
+                    android:drawableStart="@drawable/ic_check_circle"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:165: Warning: Use app:drawableTint instead of android:drawableTint [UseCompatTextViewDrawableXml from androidx.appcompat]
+                    android:drawableTint="@color/text_secondary"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:176: Warning: Use app:drawableStartCompat instead of android:drawableStart [UseCompatTextViewDrawableXml from androidx.appcompat]
+                    android:drawableStart="@drawable/ic_check_circle"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:177: Warning: Use app:drawableTint instead of android:drawableTint [UseCompatTextViewDrawableXml from androidx.appcompat]
+                    android:drawableTint="@color/text_secondary"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:188: Warning: Use app:drawableStartCompat instead of android:drawableStart [UseCompatTextViewDrawableXml from androidx.appcompat]
+                    android:drawableStart="@drawable/ic_check_circle"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:189: Warning: Use app:drawableTint instead of android:drawableTint [UseCompatTextViewDrawableXml from androidx.appcompat]
+                    android:drawableTint="@color/text_secondary"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseCompatTextViewDrawableXml":
+   TextView uses android: compound drawable attributes instead of app: ones
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.appcompat
+   Feedback: https://issuetracker.google.com/issues/new?component=460343
+
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\utils\EmailUtils.kt:9: Warning: Do not place Android context classes in static fields (static reference to FirebaseFirestore which has field context pointing to Context); this is a memory leak [StaticFieldLeak]
+    private val firestore = FirebaseFirestore.getInstance()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "StaticFieldLeak":
+   A static field will leak contexts.
+
+   Non-static inner classes have an implicit reference to their outer class.
+   If that outer class is for example a Fragment or Activity, then this
+   reference means that the long-running handler/loader/task will hold a
+   reference to the activity which prevents it from getting garbage
+   collected.
+
+   Similarly, direct field references to activities and fragments from these
+   longer running instances can cause leaks.
+
+   ViewModel classes should never point to Views or non-application Contexts.
+
+C:\Users\soham\Coding\Project\app\src\main\res\drawable\ic_light_mode.xml:9: Warning: Very long vector path (1033 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector. [VectorPath]
+      android:pathData="M12,9c1.65,0 3,1.35 3,3s-1.35,3 -3,3 -3,-1.35 -3,-3 1.35,-3 3,-3m0,-2c-2.76,0 -5,2.24 -5,5s2.24,5 5,5 5,-2.24 5,-5 -2.24,-5 -5,-5zM2,13h2c0.55,0 1,-0.45 1,-1s-0.45,-1 -1,-1L2,11c-0.55,0 -1,0.45 -1,1s0.45,1 1,1zM20,13h2c0.55,0 1,-0.45 1,-1s-0.45,-1 -1,-1h-2c-0.55,0 -1,0.45 -1,1s0.45,1 1,1zM11,2v2c0,0.55 0.45,1 1,1s1,-0.45 1,-1L13,2c0,-0.55 -0.45,-1 -1,-1s-1,0.45 -1,1zM11,20v2c0,0.55 0.45,1 1,1s1,-0.45 1,-1v-2c0,-0.55 -0.45,-1 -1,-1s-1,0.45 -1,1zM5.99,4.58c-0.39,-0.39 -1.03,-0.39 -1.41,0 -0.39,0.39 -0.39,1.03 0,1.41l1.06,1.06c0.39,0.39 1.03,0.39 1.41,0s0.39,-1.03 0,-1.41L5.99,4.58zM18.36,16.95c-0.39,-0.39 -1.03,-0.39 -1.41,0 -0.39,0.39 -0.39,1.03 0,1.41l1.06,1.06c0.39,0.39 1.03,0.39 1.41,0 0.39,-0.39 0.39,-1.03 0,-1.41l-1.06,-1.06zM19.42,5.99c0.39,-0.39 0.39,-1.03 0,-1.41 -0.39,-0.39 -1.03,-0.39 -1.41,0l-1.06,1.06c-0.39,0.39 -0.39,1.03 0,1.41 0.39,0.39 1.03,0.39 1.41,0l1.06,-1.06zM7.05,18.36c0.39,-0.39 0.39,-1.03 0,-1.41 -0.39,-0.39 -1.03,-0.39 -1.41,0l-1.06,1.06c-0.39,0.39 -0.39,1.03 0,1.41s1.03,0.39 1.41,0l1.06,-1.06z"/>
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "VectorPath":
+   Using long vector paths is bad for performance. There are several ways to
+   make the pathData shorter:
+   * Using less precision
+   * Removing some minor details
+   * Using the Android Studio vector conversion tool
+   * Rasterizing the image (converting to PNG)
+
+C:\Users\soham\Coding\Project\app\src\main\res\layout\activity_home.xml:7: Warning: Possible overdraw: Root element paints background ?attr/colorSurface with a theme that also paints a background (inferred theme is @style/Theme_EduConnect) [Overdraw]
+    android:background="?attr/colorSurface"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:4: Warning: The resource R.color.purple_200 appears to be unused [UnusedResources]
+    <color name="purple_200">#FFBB86FC</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:5: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#FF6200EE</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:6: Warning: The resource R.color.purple_700 appears to be unused [UnusedResources]
+    <color name="purple_700">#FF3700B3</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:7: Warning: The resource R.color.teal_200 appears to be unused [UnusedResources]
+    <color name="teal_200">#FF03DAC5</color>
+           ~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:8: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:25: Warning: The resource R.color.text_primary_light appears to be unused [UnusedResources]
+    <color name="text_primary_light">#2C3E50</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:27: Warning: The resource R.color.text_secondary_light appears to be unused [UnusedResources]
+    <color name="text_secondary_light">#7F8C8D</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:37: Warning: The resource R.color.button_primary appears to be unused [UnusedResources]
+    <color name="button_primary">#0DBA80</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:38: Warning: The resource R.color.button_primary_pressed appears to be unused [UnusedResources]
+    <color name="button_primary_pressed">#7AA67A</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:46: Warning: The resource R.color.warning_orange appears to be unused [UnusedResources]
+    <color name="warning_orange">#FF9800</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:47: Warning: The resource R.color.info_blue appears to be unused [UnusedResources]
+    <color name="info_blue">#2196F3</color>
+           ~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:55: Warning: The resource R.color.black appears to be unused [UnusedResources]
+    <color name="black">#000000</color>
+           ~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:56: Warning: The resource R.color.error appears to be unused [UnusedResources]
+    <color name="error">#E74C3C</color>
+           ~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\colors.xml:57: Warning: The resource R.color.transparent appears to be unused [UnusedResources]
+    <color name="transparent">#00000000</color>
+           ~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\dimens.xml:19: Warning: The resource R.dimen.radius_small appears to be unused [UnusedResources]
+    <dimen name="radius_small">8dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\dimens.xml:21: Warning: The resource R.dimen.radius_large appears to be unused [UnusedResources]
+    <dimen name="radius_large">16dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\dimens.xml:22: Warning: The resource R.dimen.radius_xlarge appears to be unused [UnusedResources]
+    <dimen name="radius_xlarge">20dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\dimens.xml:27: Warning: The resource R.dimen.elevation_large appears to be unused [UnusedResources]
+    <dimen name="elevation_large">8dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\dimens.xml:30: Warning: The resource R.dimen.text_size_small appears to be unused [UnusedResources]
+    <dimen name="text_size_small">12sp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\dimens.xml:33: Warning: The resource R.dimen.text_size_large appears to be unused [UnusedResources]
+    <dimen name="text_size_large">18sp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\dimens.xml:34: Warning: The resource R.dimen.text_size_title appears to be unused [UnusedResources]
+    <dimen name="text_size_title">24sp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:14: Warning: The resource R.string.email_mobile_hint appears to be unused [UnusedResources]
+    <string name="email_mobile_hint">e.g., user@example.com or 1234567890</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:16: Warning: The resource R.string.password_hint appears to be unused [UnusedResources]
+    <string name="password_hint">Enter your password</string>
+            ~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:26: Warning: The resource R.string.unique_id_hint appears to be unused [UnusedResources]
+    <string name="unique_id_hint">Enter your unique ID</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:34: Warning: The resource R.string.loading appears to be unused [UnusedResources]
+    <string name="loading">Loading...</string>
+            ~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:35: Warning: The resource R.string.error_occurred appears to be unused [UnusedResources]
+    <string name="error_occurred">An error occurred</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:36: Warning: The resource R.string.invalid_credentials appears to be unused [UnusedResources]
+    <string name="invalid_credentials">Invalid credentials</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:37: Warning: The resource R.string.network_error appears to be unused [UnusedResources]
+    <string name="network_error">Network error. Please check your connection.</string>
+            ~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:41: Warning: The resource R.string.light_mode appears to be unused [UnusedResources]
+    <string name="light_mode">Light Mode</string>
+            ~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\themes.xml:31: Warning: The resource R.style.LoginButton appears to be unused [UnusedResources]
+    <style name="LoginButton" parent="Widget.Material3.Button">
+           ~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\values\themes.xml:66: Warning: The resource R.style.LoginCard appears to be unused [UnusedResources]
+    <style name="LoginCard" parent="Widget.Material3.CardView.Elevated">
+           ~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+C:\Users\soham\Coding\Project\app\src\main\res\values\strings.xml:34: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="loading">Loading...</string>
+                           ~~~~~~~~~~
+
+   Explanation for issues of type "TypographyEllipsis":
+   You can replace the string "..." with a dedicated ellipsis character,
+   ellipsis character (u2026, &#8230;). This can help make the text more
+   readable.
+
+   https://en.wikipedia.org/wiki/Ellipsis
+
+C:\Users\soham\Coding\Project\app\src\main\res\layout\activity_home.xml:67: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step1.xml:140: Warning: 'clickable' attribute found, please also add 'focusable' [KeyboardInaccessibleWidget]
+                android:clickable="true"
+                ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "KeyboardInaccessibleWidget":
+   A widget that is declared to be clickable but not declared to be focusable
+   is not accessible via the keyboard. Please add the focusable attribute as
+   well.
+
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:89: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                binding.tvUserInfo.text = "Email: $userEmail"
+                                          ~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:89: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.tvUserInfo.text = "Email: $userEmail"
+                                           ~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:91: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.btnDashboard.text = "Student Dashboard"
+                                             ~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:95: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                binding.tvUserInfo.text = "Teacher ID: $uniqueId"
+                                          ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:95: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.tvUserInfo.text = "Teacher ID: $uniqueId"
+                                           ~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:97: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.btnDashboard.text = "Teacher Dashboard"
+                                             ~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:100: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.tvWelcomeMessage.text = "Welcome to EduConnect!"
+                                                 ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\home\HomeActivity.kt:101: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.tvUserInfo.text = "Welcome to your learning portal"
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\auth\StudentSignUpActivity.kt:103: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.btnNext.text = "Next"
+                                        ~~~~
+C:\Users\soham\Coding\Project\app\src\main\java\com\example\educonnect\ui\auth\StudentSignUpActivity.kt:107: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.btnNext.text = "Create Account"
+                                        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+C:\Users\soham\Coding\Project\app\src\main\res\layout\activity_student_signup.xml:57: Warning: Hardcoded string "Personal", should use @string resource [HardcodedText]
+                android:text="Personal"
+                ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\activity_student_signup.xml:91: Warning: Hardcoded string "Account", should use @string resource [HardcodedText]
+                android:text="Account"
+                ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\activity_student_signup.xml:136: Warning: Hardcoded string "Next", should use @string resource [HardcodedText]
+                android:text="Next"
+                ~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step1.xml:13: Warning: Hardcoded string "Personal Information", should use @string resource [HardcodedText]
+        android:text="Personal Information"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step1.xml:28: Warning: Hardcoded string "Let's get to know you better", should use @string resource [HardcodedText]
+        android:text="Let's get to know you better"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step1.xml:56: Warning: Hardcoded string "First Name", should use @string resource [HardcodedText]
+            android:hint="First Name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step1.xml:80: Warning: Hardcoded string "Last Name", should use @string resource [HardcodedText]
+            android:hint="Last Name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step1.xml:104: Warning: Hardcoded string "Select Class/Grade", should use @string resource [HardcodedText]
+            android:hint="Select Class/Grade"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step1.xml:129: Warning: Hardcoded string "Date of Birth", should use @string resource [HardcodedText]
+            android:hint="Date of Birth"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:13: Warning: Hardcoded string "Account Setup", should use @string resource [HardcodedText]
+        android:text="Account Setup"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:28: Warning: Hardcoded string "Create your login credentials", should use @string resource [HardcodedText]
+        android:text="Create your login credentials"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:56: Warning: Hardcoded string "Email Address", should use @string resource [HardcodedText]
+            android:hint="Email Address"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:81: Warning: Hardcoded string "Create Password", should use @string resource [HardcodedText]
+            android:hint="Create Password"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:108: Warning: Hardcoded string "Confirm Password", should use @string resource [HardcodedText]
+            android:hint="Confirm Password"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:140: Warning: Hardcoded string "Password Requirements:", should use @string resource [HardcodedText]
+                android:text="Password Requirements:"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:161: Warning: Hardcoded string "• At least 8 characters", should use @string resource [HardcodedText]
+                    android:text="• At least 8 characters"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:173: Warning: Hardcoded string "• Contains uppercase letter", should use @string resource [HardcodedText]
+                    android:text="• Contains uppercase letter"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:185: Warning: Hardcoded string "• Contains number or symbol", should use @string resource [HardcodedText]
+                    android:text="• Contains number or symbol"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\soham\Coding\Project\app\src\main\res\layout\fragment_signup_step2.xml:214: Warning: Hardcoded string "I agree to the Terms and Conditions and Privacy Policy", should use @string resource [HardcodedText]
+                android:text="I agree to the Terms and Conditions and Privacy Policy"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 73 warnings

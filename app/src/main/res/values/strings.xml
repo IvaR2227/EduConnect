@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">EduConnect</string>
+    
+    <!-- Welcome Screen -->
+    <string name="welcome_title">Welcome to EduConnect</string>
+    <string name="welcome_subtitle">Your gateway to seamless learning and teaching</string>
+    <string name="student_login">Student Login</string>
+    <string name="teacher_login">Teacher Login</string>
+    
+    <!-- Student Login -->
+    <string name="student_login_title">Student Login</string>
+    <string name="student_login_subtitle">Access your learning portal.</string>
+    <string name="email_or_mobile">Email or Mobile Number</string>
+    <string name="email_mobile_hint">e.g., user@example.com or 1234567890</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    
+    <!-- Teacher Login -->
+    <string name="teacher_login_title">Teacher Login</string>
+    <string name="teacher_login_subtitle">Access your teaching dashboard.</string>
+    <string name="unique_id">Unique ID</string>
+    <string name="unique_id_hint">Enter your unique ID</string>
+    <string name="back_to_home">Back to Home</string>
+    
+    <!-- Sign Up -->
+    <string name="next">Next</string>
+    <string name="create_account">Create Account</string>
+    
+    <!-- Accessibility -->
+    <string name="app_logo_description">EduConnect application logo</string>
+    <string name="loading_progress">Loading, please wait</string>
+    
+    <!-- Common -->
+    <string name="loading">Loading...</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="network_error">Network error. Please check your connection.</string>
+    
+    <!-- Navigation -->
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    
+    <!-- Home Screen -->
+    <string name="welcome_message_student">Dear Student,\nYou logged in successfully!</string>
+    <string name="welcome_message_teacher">Dear Teacher,\nYou logged in successfully!</string>
+    <string name="user_info_placeholder">Welcome to your learning portal</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="go_to_dashboard">Go to Dashboard</string>
+    <string name="view_profile">View Profile</string>
+    <string name="logout">Logout</string>
+</resources> 

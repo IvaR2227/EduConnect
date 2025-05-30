@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.educonnect.app-mergeDebugResources-64:/values-sw600dp-night-v13/values-sw600dp-night-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\soham\\Coding\\Project\\app\\src\\main\\res\\values-sw600dp-night\\colors.xml",
+                    "from": {
+                        "startLines": "9,5,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "324,165,218",
+                        "endColumns": "43,51,48",
+                        "endOffsets": "363,212,262"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,99,151",
+                        "endColumns": "43,51,48",
+                        "endOffsets": "94,146,195"
+                    }
+                }
+            ]
+        }
+    ]
+}

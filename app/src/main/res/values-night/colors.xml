@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Color Overrides -->
+    
+    <!-- Text Colors for Dark Theme -->
+    <color name="text_primary">@color/text_primary_dark</color>
+    <color name="text_secondary">@color/text_secondary_dark</color>
+    
+    <!-- Ensure proper contrast in dark theme -->
+    <color name="link_blue">#5DADE2</color>
+    
+    <!-- Button text should always be visible -->
+    <color name="button_text_white">@color/white</color>
+</resources> 
